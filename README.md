@@ -1,1 +1,0 @@
-# guayerd_class
