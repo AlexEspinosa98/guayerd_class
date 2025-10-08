@@ -30,7 +30,7 @@ En esta etapa, el programa funciona como un **visor interactivo de la documentac
 
 
 ### 3.2 Pasos
-
+    
 ### 3.3 Pseudocódigo
 
 ### 3.4 Diagrama de flujo: en carpeta

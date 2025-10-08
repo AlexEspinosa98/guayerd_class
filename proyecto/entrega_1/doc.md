@@ -21,6 +21,7 @@ Ejemplo de tablas:
 | Campo             | Tipo | Escala   |
 |-------------------|------|----------|
 | `id_producto`     | int  | Nominal  |
+   aasdassda.        str.    dddd
 
 
 
