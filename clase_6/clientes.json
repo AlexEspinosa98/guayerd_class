@@ -1,0 +1,32 @@
+[
+    {
+        "Cliente":"Ana",
+        "Ciudad":"Bogot\u00e1",
+        "Edad":25,
+        "Ventas":1500
+    },
+    {
+        "Cliente":"Luis",
+        "Ciudad":"Medell\u00edn",
+        "Edad":30,
+        "Ventas":2200
+    },
+    {
+        "Cliente":"Carla",
+        "Ciudad":"Bogot\u00e1",
+        "Edad":22,
+        "Ventas":1800
+    },
+    {
+        "Cliente":"Pedro",
+        "Ciudad":"Cali",
+        "Edad":35,
+        "Ventas":3000
+    },
+    {
+        "Cliente":"Sof\u00eda",
+        "Ciudad":"Cali",
+        "Edad":28,
+        "Ventas":2500
+    }
+]
