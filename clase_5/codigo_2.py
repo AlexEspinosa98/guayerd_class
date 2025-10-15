@@ -1,26 +1,55 @@
+from enum import Enum
+from typing import Optional
 
+class MenuOption(Enum):
+    EXIT = 0
+    FIRST = 1
+    SECOND = 2
+    THIRD = 3
+    FOURTH = 4
+    FIFTH = 5
 
-# Quiero una funcion que cuando reciba un numero 
-# lo multiplique por 2, lo imprima y luego retorne el resultado
+def display_menu() -> None:
+    """Display the main menu options."""
+    print("\n=== MENU PRINCIPAL ===")
+    options = {
+        "1": "Primera opción",
+        "2": "Segunda opción",
+        "3": "Tercera opción",
+        "4": "Cuarta opción",
+        "5": "Quinta opción",
+        "0": "Salir"
+    }
+    for key, value in options.items():
+        print(f"{key}. {value}")
 
-while True:
-    print("\nMenú de opciones:")
-    print("1. Información 1")
-    print("2. Información 2")
-    print("3. Información 3")
-    print("4. Información 4")
-    print("0. Salir")
-    opcion = input("Elige una opción (0-4): ")
-    if opcion == "0":
-        print("Saliendo del programa.")
-        break
-    elif opcion == "1":
-        print("Has elegido la opción 1: Información 1")
-    elif opcion == "2":
-        print("Has elegido la opción 2: Información 2")
-    elif opcion == "3":
-        print("Has elegido la opción 3: Información 3")
-    elif opcion == "4":
-        print("Has elegido la opción 4: Información 4")
-    else:
-        print("Opción inválida. Por favor, elige una opción entre 0 y 4.")
+def get_user_choice() -> Optional[MenuOption]:
+    """Get and validate user input.
+    
+    Returns:
+        MenuOption if valid choice, None otherwise
+    """
+    try:
+        choice = int(input("\nIngrese una opción: "))
+        return MenuOption(choice)
+    except (ValueError, KeyError):
+        return None
+
+def main():
+    """Main program loop."""
+    while True:
+        display_menu()
+        choice = get_user_choice()
+        
+        if choice is None:
+            print("Opción inválida. Por favor intente nuevamente.")
+            continue
+            
+        if choice == MenuOption.EXIT:
+            print("¡Hasta luego!")
+            break
+            
+        print(f"Has seleccionado la {choice.name.lower()} opción")
+
+if __name__ == "__main__":
+    main()

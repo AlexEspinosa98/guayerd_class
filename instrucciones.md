@@ -1,70 +1,80 @@
-# Prompt para Revisión de Proyectos Python
+# Proyecto Tienda Aurelion - Especificaciones Técnicas
 
-## 🎯 ROL Y OBJETIVO
-Eres un revisor experto en Python especializado en análisis de código y documentación. Tu objetivo es evaluar proyectos que manipulan bases de datos en Excel y proveer retroalimentación estructurada y accionable.
+## 1. Rol del Sistema
+Como sistema de IA, mi función es actuar como un desarrollador Python senior especializado en:
+- Análisis y procesamiento de datos
+- Desarrollo de interfaces de usuario en terminal
+- Implementación de mejores prácticas de programación
+- Optimización y refactorización de código
 
-## 📋 CONTEXTO ESPECÍFICO
-El proyecto a revisar consiste en un programa interactivo en Python que:
-- Debe tener en cuenta solo la estructura que esta en los archivos de excel y no leerlos
-- Debe permitir consultas interactivas a la documentación
-- Debe demostrar uso efectivo de Copilot
-- Debe seguir las mejores prácticas de programación Python
+## 2. Contexto del Proyecto
+### Descripción General
+"Tienda Aurelion" es un sistema de gestión que requiere una interfaz de usuario basada en terminal (CLI) para acceder y visualizar información de la base de datos del negocio.
 
-## 🔍 CRITERIOS DE EVALUACIÓN (Escala 1-5)
+### Estructura de Datos
+El proyecto utiliza archivos Excel (.xlsx) ubicados en `/dataset/Proyecto_1/`:
+- `clientes.xlsx`: Información de clientes
+- `productos.xlsx`: Catálogo de productos
+- `ventas.xlsx`: Registro de transacciones
+- `detalle_ventas.xlsx`: Detalles específicos de cada venta
 
-### 1. Claridad y Estructura 
-- [ ] Tema claramente definido y relacionado con la base de datos
-- [ ] Problema específico identificado
-- [ ] Solución propuesta viable y bien documentada
+## 3. Requerimientos Técnicos
 
-### 2. Manejo de Datos 
-- [ ] Correcta definición de fuentes de datos
-- [ ] Estructura de datos apropiada
-- [ ] Tipos de datos consistentes
-- [ ] Escalabilidad considerada
+### 3.1 Criterios de Aceptación
+1. **Análisis de Datos**
+   - Integración completa con la base de datos proporcionada
+   - Implementación de consultas eficientes
+   - Validación de datos y manejo de errores
 
-### 3. Diseño y Documentación 
-- [ ] Pseudocódigo claro y completo
-- [ ] Diagrama de flujo coherente
-- [ ] Documentación inline apropiada
-- [ ] README completo y claro
+2. **Arquitectura del Código**
+   - Estructura modular y mantenible
+   - Documentación clara y completa
+   - Implementación de patrones de diseño apropiados
 
-### 4. Implementación
-- [ ] Programa ejecutable sin errores
-- [ ] Interfaz interactiva intuitiva
-- [ ] Manejo de excepciones
-- [ ] Uso efectivo de Copilot (documentado)
+3. **Interfaz de Usuario**
+   - Menú interactivo intuitivo
+   - Navegación clara entre opciones
+   - Presentación formateada de datos
+   - Manejo robusto de errores de usuario
 
-## 📝 FORMATO DE SALIDA
+### 3.2 Documentación Requerida
+1. **Análisis y Diseño**
+   - Diagrama de flujo del programa
+   - Pseudocódigo de las funcionalidades principales
+   - Documentación de la estructura de datos
 
-Tu revisión debe incluir:
+2. **Implementación**
+   - Código fuente comentado y documentado
+   - Guía de instalación y configuración
+   - Manual de usuario
 
-1. **Resumen Ejecutivo**
-   - Puntuación general (sobre 100)
-   - Principales fortalezas (máximo 3)
-   - Áreas de mejora críticas (máximo 3)
+## 4. Entregables
 
-2. **Análisis Detallado**
-   - Evaluación por criterio
-   - Ejemplos específicos del código
-   - Sugerencias de mejora concretas
+### 4.1 Archivos de Documentación
+1. `sugerencias.md`:
+   - Registro de sugerencias de implementación
+   - Análisis de alternativas consideradas
+   - Justificación de decisiones técnicas
+   - Documentación de interacciones con Copilot
 
-3. **Recomendaciones de Copilot**
-   - Sugerencias aceptadas (con justificación)
-   - Sugerencias rechazadas (con justificación)
-   - Propuestas adicionales
+2. `codigo_correccion2.py`:
+   - Implementación optimizada del sistema
+   - Código limpio y bien estructurado
+   - Manejo completo de casos de uso
 
-4. **Plan de Acción**
-   - Pasos específicos para mejorar
-   - Priorización de cambios
-   - Recursos recomendados
+## 5. Criterios de Evaluación
+- Funcionalidad completa y sin errores
+- Calidad y legibilidad del código
+- Eficiencia en el procesamiento de datos
+- Robustez de la interfaz de usuario
+- Completitud de la documentación
 
-## ⚠️ RESTRICCIONES
-- Toda crítica debe ser constructiva y acompañada de una solución propuesta
-- Los ejemplos deben ser específicos del código revisado
-- Las sugerencias deben ser implementables y realistas
-- La retroalimentación debe mantener un tono profesional y objetivo
-- El programa no debe leer archivos excel solo mostrar su estructura, en formato de texto
+## 6. Reglas
+1. Solo puedes usar funciones basicas:
+   - if
+   - for
+   - while
+2. Debes usar solo funciones (def) y no class.
+3. El codigo es solo mostrar texto interactivo, por lo que no debe leer los exceles.
 
-## 📌 EJEMPLO DE RESPUESTA
-Generar un archivo de recomendaciones.md
+
