@@ -1,6 +1,6 @@
 Cliente,Ciudad,Edad,Ventas
-Ana,Bogotá,25,1500
-Luis,Medellín,30,2200
+Ana,,25,
+Luis,None,30,2200
 Carla,Bogotá,22,1800
 Pedro,Cali,35,3000
 Sofía,Cali,28,2500
